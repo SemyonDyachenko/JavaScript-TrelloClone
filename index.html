@@ -13,17 +13,32 @@
     <div class="table">
         <div class="header">
             <h3 id="main-table-name" style="cursor:default;" class="table-name">TODO LIST</h3>
-            <a onclick="SaveTableNameChanges()" style="display: none;margin-left:55px;" href="#" id="completer"><li class="fas fa-check-circle"></li></a>
-
-            <a onclick="ChangeTableName()" href="#" id="namechanger" class="namechanger"><li class="fas fa-edit"></li></a>
+    
 
             <input style="display:none;" type="text" id="table-name-input" name="table-name-input">
-            
-        </div>
-            
-      
-    </div>
 
+            <a onclick="SaveTableNameChanges()" style="display: none;margin-left:250px;" href="#" id="completer"><li class="fas fa-check-circle"></li></a>
+
+            <a onclick="ChangeTableName()" href="#" id="namechanger" class="namechanger"><li class="fas fa-edit"></li></a>
+        </div>
+        
+
+       <!-----------------Part 2--------------> 
+
+        <section class="cards" id="cards">
+
+        </section>
+        
+        <div class="adding-cards">
+            <input type="text" id="input-for-add-card" name="input-for-add-card">
+            <a  onclick="addCard()" href="#" id="additem"><li class="fas fa-plus"></li> Add another card</a>
+        </div>
+      
+        
+    </div>
+    <div id="settings">
+        <a onclick="changeTheme()" href="#" id="settings-button" class="settings-button"><li class="fas fa-cog"></li></a>
+    </div>
     </div>
 
     <script src="index.js"></script>
