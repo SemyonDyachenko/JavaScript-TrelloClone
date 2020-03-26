@@ -30,10 +30,16 @@ function ChangeTableName()
 
 function SaveTableNameChanges()
 {
+    if(inputforchange.value)
+    {
    name.innerHTML = inputforchange.value;
    
    completer.style.display = "none";
    inputforchange.style.display = "none";
    namechanger.innerHTML = "<li class='fas fa-edit'></li>";
    nowChanges = false;
+    }
+    else {
+        alert("The table must have a name!");
+    }
 }
