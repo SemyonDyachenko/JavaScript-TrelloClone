@@ -31,13 +31,13 @@ body
 .table
 {
     height:auto;
-    width:384px;
-    max-width: 384px;
+    width:315px;
+    max-width: 315px;
     margin-left: 40px;
     margin-top:40px;
     background:#ebecf0;
     border:1px solid #ebecf0;
-    border-radius: 8px;
+    border-radius: 4px;
     box-sizing: border-box;
     padding:15px;
     float:left;
@@ -164,27 +164,6 @@ body
 }
 
 
-#settings {
-    width: 100px;
-    max-width: 100px;
-    height: 50px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 40px;
-    align-items: center;
-}
-
-#settings a {
-    font-size:30px;
-}
-
-#settings li:hover {
-    -webkit-transform: rotateZ(20deg);
-    -ms-transform: rotateZ(20deg);
-    transform: rotateZ(20deg);
-}
 
 /*---------part3--------*/
 
@@ -236,4 +215,47 @@ body
     max-height: 32px;
     outline:none;
    
+}
+
+/*----part4----*/
+
+
+
+#settings {
+    width: 330px;
+    max-width: 500px;
+    height: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: -300px;
+}
+
+#settings a {
+    font-size:30px;
+    margin-top:15px;
+}
+
+#settings li:hover {
+    -webkit-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+}
+
+.settings-bar {
+    margin:0;
+    padding:0;
+    width:300px;
+    height:900px;
+    float:right;
+    background:#ebecf0;
+    opacity: 0.9;
+}
+
+.settings-bar h3 {
+    padding-left:15px;
+    padding-top:15px;
+    font-size:1.1em;
+    color:black;
 }

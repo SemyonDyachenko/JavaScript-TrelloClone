@@ -17,7 +17,7 @@
 
             <input style="display:none;" type="text" id="table-name-input" name="table-name-input">
 
-            <a onclick="SaveTableNameChanges()" style="display: none;margin-left:250px;" href="#" id="completer"><li class="fas fa-check-circle"></li></a>
+            <a onclick="SaveTableNameChanges()" style="display: none;margin-left:230px;" href="#" id="completer"><li class="fas fa-check-circle"></li></a>
 
             <a onclick="ChangeTableName()" href="#" id="namechanger" class="namechanger"><li class="fas fa-edit"></li></a>
         </div>
@@ -36,9 +36,17 @@
       
         
     </div>
-    <div id="settings">
-        <a onclick="" href="#" id="settings-button" class="settings-button"><li class="fas fa-cog"></li></a>
+    
+</div>
+
+
+<div id="settings">
+    <a  href="#" id="settings-button" class="settings-button"><li class="fas fa-cog"></li></a>
+
+    <div class="settings-bar">
+        <h3>Settings</h3>
     </div>
+</div>
 
     <div style="display: none;" id="card-settings">
         <div class="change-card-info">
@@ -51,9 +59,31 @@
         <a id="saved-card-changes" href="#">Save</a>
     </div>
 
-    </div>
 
     <script src="index.js"></script>
     <script src="table-name.js"></script>
+    <script src="settings.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBYzAeUeck3-aFPzJy4-shqyotPKrTJUZE",
+    authDomain: "selfcontrol-5a124.firebaseapp.com",
+    databaseURL: "https://selfcontrol-5a124.firebaseio.com",
+    projectId: "selfcontrol-5a124",
+    storageBucket: "selfcontrol-5a124.appspot.com",
+    messagingSenderId: "589376614356",
+    appId: "1:589376614356:web:aa97e0a214ceec28097041"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
